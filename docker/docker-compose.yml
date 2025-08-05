@@ -1,0 +1,9 @@
+services:
+  gin_app:
+    build:
+      context: ..
+      dockerfile: docker/dockerfiles/Dockerfile
+    container_name: gin-app
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
